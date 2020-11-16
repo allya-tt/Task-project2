@@ -1,1 +1,57 @@
-
+weight=int(input("Введите Ваш вес (в кг): "))
+height=int(input("Введите Ваш рост (в см): "))
+age=int(input("Введите Ваш возраст (в годах): "))
+print("Выберите Ваш пол:", '1) М', '2) Ж', sep="\n")
+gender=int(input("Введите соответствующую цифру: "))
+print("Введите цифру, соответствующую Вашей активности:", '1) нет физической активности',
+                                         '2) спорт 3 раза в неделю',
+                                         '3) спорт 5 раз в неделю',
+                                         '4) интенсивные тренировки 5 раз в неделю',
+                                         '5) тренировки каждый день',
+                                         '6) интенсивные тренировки каждый день или по 2 раза в день',
+                                         '7) ежедневная физ. нагузка + физическая работа', sep="\n")
+activity_ratio=int(input("Введите эту цифру: " ))
+if gender==1:
+    if activity_ratio==1:
+        DCI=int((weight*10+height*6.25-age*5+5)*1.2)
+        print("Ваша суточная норма каллорий равна (в ккал):", DCI)
+    elif activity_ratio==2:
+        DCI = int((weight * 10 + height * 6.25 - age*5 + 5) * 1.38)
+        print("Ваша суточная норма каллорий равна (в ккал):", DCI)
+    elif activity_ratio == 3:
+        DCI = int((weight * 10 + height * 6.25 - age*5 + 5) * 1.46)
+        print("Ваша суточная норма каллорий равна (в ккал):", DCI)
+    elif activity_ratio == 4:
+        DCI = int((weight * 10 + height * 6.25 - age*5 + 5) * 1.55)
+        print("Ваша суточная норма каллорий равна (в ккал):", DCI)
+    elif activity_ratio == 5:
+        DCI = int((weight * 10 + height * 6.25 - age*5 + 5) * 1.64)
+        print("Ваша суточная норма каллорий равна (в ккал):", DCI)
+    elif activity_ratio == 6:
+        DCI = int((weight * 10 + height * 6.25 - age*5 + 5) * 1.73)
+        print("Ваша суточная норма каллорий равна (в ккал):", DCI)
+    elif activity_ratio == 2:
+        DCI = int((weight * 10 + height * 6.25 - age*5 + 5) * 1.9)
+        print("Ваша суточная норма каллорий равна (в ккал):", DCI)
+else:
+    if activity_ratio == 1:
+        DCI = int((weight * 10 + height * 6.25 - age*5 - 161) * 1.2)
+        print("Ваша суточная норма каллорий равна (в ккал):", DCI)
+    elif activity_ratio == 2:
+        DCI = int((weight * 10 + height * 6.25 - age*5 - 161) * 1.38)
+        print("Ваша суточная норма каллорий равна (в ккал):", DCI)
+    elif activity_ratio == 3:
+        DCI = int((weight * 10 + height * 6.25 - age*5 - 161) * 1.46)
+        print("Ваша суточная норма каллорий равна (в ккал):", DCI)
+    elif activity_ratio == 4:
+        DCI = int((weight * 10 + height * 6.25 - age*5 - 161) * 1.55)
+        print("Ваша суточная норма каллорий равна (в ккал):", DCI)
+    elif activity_ratio == 5:
+        DCI = int((weight * 10 + height * 6.25 - age*5 - 161) * 1.64)
+        print("Ваша суточная норма каллорий равна (в ккал):", DCI)
+    elif activity_ratio == 6:
+        DCI = int((weight * 10 + height * 6.25 - age*5 - 161) * 1.73)
+        print("Ваша суточная норма каллорий равна (в ккал):", DCI)
+    elif activity_ratio == 2:
+        DCI = int((weight * 10 + height * 6.25 - age*5 - 161) * 1.9)
+        print("Ваша суточная норма каллорий равна (в ккал): ", DCI)
